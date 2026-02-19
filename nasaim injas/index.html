@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - nasaim al injas</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="page-index">
+
+<header>
+    <div class="logo">
+        <img src="شعار بالألوان.png" alt="logo" width="120" height="100">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="profile.html">الملف التعريفي</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="clients.html">عملائنا</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>نسائم الإنجاز... لتجد أكفأ الكوادر البشرية</h1>
+        <h2>لمؤسستك داخل المملكة العربية السعودية</h2>
+        <p>تأجير عمالة مهنية ومدربة بأعلى معايير الجودة</p>
+
+        <!-- زر واتساب مباشرة -->
+        <a href="https://wa.me/966500000000" class="hero-btn" target="_blank">
+          اعرف أكثر
+        </a>
+    </div>
+</div>
+
+<section>
+    <h1>خدماتنا</h1>
+    <h5>توفير عمالة محترفة وكوادر مؤهلة</h5>
+
+    <div class="main-services-wrapper">
+        <div class="main-service-card">
+            <h3>خدمات تشغيل وإدارة المواقع</h3>
+            <p>إدارة العمليات اليومية بكفاءة عالية.</p>
+        </div>
+
+        <div class="main-service-card">
+            <h3>توفير العمالة المؤهلة</h3>
+            <p>كوادر مدربة حسب احتياج الجهة.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    جميع الحقوق محفوظة &copy; 2026 |
+    <a href="#">Nasaim Alenjas</a>
+</footer>
+
+<!-- Floating Contact Widget -->
+<div class="contact-widget">
+  <div class="contact-toggle">📞</div>
+  <div class="contact-content">
+    <h3>تواصل معنا</h3>
+    <p>شركة XYZ</p>
+    <p>العنوان: شارع المثال 123، المدينة</p>
+    <p>الهاتف: +966 5xxxxxxx</p>
+    <div class="contact-icons">
+      <a href="https://wa.me/966000000000" target="_blank" class="whatsapp" title="واتس آب"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/yourpage" target="_blank" class="instagram" title="إنستقرام"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/example" target="_blank" class="linkedin" title="لينكدإن"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/example" target="_blank" class="facebook" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.snapchat.com/add/username" target="_blank" class="snapchat" title="سناب"><i class="fab fa-snapchat-ghost"></i></a>
+      <a href="https://twitter.com/example" target="_blank" class="x" title="X"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.tiktok.com/@example" target="_blank" class="tiktok" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+      <a href="https://goo.gl/maps/example" target="_blank" class="googlemaps" title="موقعنا"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const widget = document.querySelector(".contact-widget");
+  const toggle = document.querySelector(".contact-toggle");
+
+  toggle.addEventListener("click", function() {
+    widget.classList.toggle("open");
+  });
+});
+</script>
+
+</body>
+</html>

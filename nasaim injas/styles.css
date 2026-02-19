@@ -1,0 +1,537 @@
+/* =========================
+   الملف التعريفي - كاردات منفصلة
+========================= */
+.company-profile {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #d1c5c5;
+}
+
+.profile-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.profile-card {
+    background-color: #998d8d;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+    width: 100%;        
+    min-height: auto;    
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.profile-card h1, 
+.profile-card h2 {
+    color: #333125;
+    margin-bottom: 15px;
+}
+
+.profile-card p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #FFD700;
+    color: #1f1f1f;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background-color: #e6c200;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+/* =========================
+   كاردات جديدة فوق القديمة
+========================= */
+.new-profile-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #d1c5c5;
+}
+
+.new-profile-card {
+    background-color: #998d8d;
+    width: 220px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.new-profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.new-profile-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.new-profile-card h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.new-profile-card p {
+    color: #1f1f1f;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================
+   RESPONSIVE للكاردات الجديدة
+========================= */
+@media (max-width: 1024px) {
+    .new-profile-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-profile-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* =========================
+   إعدادات عامة
+========================= */
+:root {
+    --main-color: #FFD700; 
+    --dark-color: #1f1f1f;
+    --text-color: #202020;
+    --bg-color: #f5f7fa;
+    --white: #7a7373;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Tahoma", Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   الهيدر
+========================= */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--main-color);
+    color: var(--dark-color);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url("صوره رأسي.jif") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-content h1 { font-size: 42px; margin-bottom: 15px; }
+.hero-content h2 { font-size: 26px; margin-bottom: 15px; color: var(--main-color); }
+.hero-content p { font-size: 18px; margin-bottom: 30px; }
+
+.hero-btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    padding: 14px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover { background-color: #e6c200; }
+
+/* =========================
+   الأقسام العامة
+========================= */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #d1c5c5;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+section h2::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background-color: var(--main-color);
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+/* =========================
+   كروت الخدمات الجديدة
+========================= */
+.main-services-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.main-service-card {
+    background-color: #7a7373;
+    width: 380px;
+    min-height: 200px;
+    border-radius: 25px;
+    padding: 60px 40px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.main-service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.main-service-card h3 {
+    color: var(--main-color);
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.main-service-card p {
+    color: #111;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* =========================
+   الكروت والخدمات القديمة
+========================= */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    background-color: #d1c5c5;
+}
+
+.service-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    width: 200;
+    height: 500px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.service-list li::before {
+    content: "> ";
+    color: var(--main-color);
+    margin-right: 5px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about-section {
+    padding: 80px 10%;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    background-color: #d1c5c5;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    width: 100%;
+    padding: 50px 40px;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.card h3 { margin: 20px 0; font-size: 24px; }
+.card p { line-height: 1.8; }
+
+.yellow { background: linear-gradient(135deg, #88a3a3, #527171); }
+.teal { background: linear-gradient(135deg, #88a3a3, #527171); }
+
+.card:hover { transform: translateY(-10px); }
+
+/* =========================
+   قسم عملاؤنا
+========================= */
+.clients-section {
+  padding: 60px 10% 60px 10%;
+  min-height: 50vh;
+  background-color: #cdbaba;
+  text-align: center;
+}
+
+.clients-section h2 {
+  color: #c49f28;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.clients-section h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 40px;
+  background-color: #5a5a56;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 60px;
+  align-items: center;
+}
+
+.clients-logos img {
+  max-height: 60px;
+  object-fit: contain;
+  filter: saturate(1);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.clients-logos img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .clients-logos img {
+    max-height: 50px;
+  }
+}
+
+/* =========================
+   الفوتر
+========================= */
+footer {
+  width: 100%;
+  display: block;
+  padding: 25px 15px;
+  background-color: var(--dark-color);
+  color: var(--white);
+  text-align: center;
+}
+
+/* =========================
+   Floating Contact Widget
+   (تم تعديل الأيقونات فقط لإظهارها بألوانها الرسمية)
+========================= */
+.contact-widget {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  z-index: 10000;
+  width: 60px;
+  transition: all 0.3s ease;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.contact-widget .contact-toggle {
+  background-color: var(--main-color);
+  color: var(--dark-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  font-size: 24px;
+}
+
+.contact-widget .contact-content {
+  display: none;
+  background-color: #fff;
+  color: #1f1f1f;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin-bottom: 70px;
+  min-width: 250px;
+  text-align: left;
+}
+
+.contact-widget .contact-content h3 {
+  margin-top: 0;
+  color: var(--main-color);
+}
+
+.contact-widget.open .contact-content {
+  display: block;
+}
+
+.contact-widget .contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contact-widget .contact-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.contact-widget .contact-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* ألوان الأيقونات الرسمية */
+.contact-widget .contact-icons .whatsapp { background: #25D366; }
+.contact-widget .contact-icons .instagram { background: #E1306C; }
+.contact-widget .contact-icons .linkedin  { background: #0077B5; }
+.contact-widget .contact-icons .facebook  { background: #1877F2; }
+.contact-widget .contact-icons .snapchat  { background: #FFFC00; color: #000; }
+.contact-widget .contact-icons .x         { background: #1DA1F2; }
+.contact-widget .contact-icons .tiktok     { background: #000; color: #fff; }
+.contact-widget .contact-icons .googlemaps{ background: #FF0000; }

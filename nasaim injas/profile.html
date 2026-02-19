@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف التعريفي - Nasaim Alenjas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body class="page-profile">
+
+<header>
+    <div class="logo">
+        <img src="شعار بالألوان.png" alt="شعار الشركة">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="profile.html">الملف التعريفي</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="clients.html">عملائنا</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="company-profile">
+
+    <div class="profile-cards">
+
+        <!-- كارد العنوان -->
+        <div class="profile-card">
+            <h1>نسائم الإنجاز</h1>
+        </div>
+
+        <!-- كارد شعار الفكرة / قصتنا -->
+        <div class="profile-card">
+            <h2>من فكرة بسيطة إلى نجاح مستدام… هذه قصتنا.</h2>
+        </div>
+
+        <!-- كارد قصتنا التفصيلية -->
+        <div class="profile-card">
+            <h2> قصتنا</h2>
+            <p>💡 بدأت شركتنا في عام 2010 بفكرة بسيطة ورؤية واضحة نحو الجودة والتميز.</p>
+            <p>🏆 واجهنا تحديات كثيرة، لكن الإصرار والالتزام بالمعايير قادانا لتحقيق إنجازات بارزة.</p>
+            <p>🌱 نحن نسعى دائمًا لتقديم حلول مبتكرة لعملائنا وبناء علاقات مبنية على الثقة.</p>
+        </div>
+
+        <!-- كارد الفيديو -->
+        <div class="profile-card">
+            <h2>🎬 شاهد رحلتنا</h2>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                        title="Company Video"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- كارد رابط PDF -->
+        <div class="profile-card">
+            <a href="company-profile.pdf" class="download-btn" target="_blank">
+                تحميل الملف التعريفي (PDF)
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    جميع الحقوق محفوظة &copy; 2026 | <a href="index.html">Nasaim Alenjas</a>
+</footer>
+<!-- Floating Contact Widget -->
+<div class="contact-widget">
+  <div class="contact-toggle">📞</div>
+  <div class="contact-content">
+    <h3>تواصل معنا</h3>
+    <p>شركة XYZ</p>
+    <p>العنوان: شارع المثال 123، المدينة</p>
+    <p>الهاتف: +966 5xxxxxxx</p>
+    <div class="contact-icons">
+      <a href="https://wa.me/966000000000" target="_blank" class="whatsapp" title="واتس آب"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/yourpage" target="_blank" class="instagram" title="إنستقرام"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/example" target="_blank" class="linkedin" title="لينكدإن"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/example" target="_blank" class="facebook" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.snapchat.com/add/username" target="_blank" class="snapchat" title="سناب"><i class="fab fa-snapchat-ghost"></i></a>
+      <a href="https://twitter.com/example" target="_blank" class="x" title="X"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.tiktok.com/@example" target="_blank" class="tiktok" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+      <a href="https://goo.gl/maps/example" target="_blank" class="googlemaps" title="موقعنا"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const widget = document.querySelector(".contact-widget");
+  const toggle = document.querySelector(".contact-toggle");
+
+  toggle.addEventListener("click", function() {
+    widget.classList.toggle("open");
+  });
+});
+</script>
+</body>
+</html>
